@@ -7,5 +7,7 @@ if ! command -v golangci-lint &> /dev/null ; then
     echo "please check https://github.com/golangci/golangci-lint" >&2
     exit 1
 fi
-
+echo "printign check "
+echo "$@"
+echo "printign check ended"
 exec golangci-lint run "$@"
