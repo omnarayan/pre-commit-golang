@@ -10,4 +10,4 @@ fi
 echo "printign check "
 echo "$@"
 echo "printign check ended"
-exec golangci-lint run  --disable-all -E errcheck -E deadcode -E errcheck -E govet -E gosimple -E ineffassign  -E staticcheck -E structcheck -E unused -E varcheck -E bodyclose -E funlen  -E gocritic -E gosec -E maligned -E misspell -E prealloc  -E scopelint -E nakedret -E unconvert "$@"
+exec golangci-lint run --disable-all -E errcheck -E deadcode -E errcheck -E govet -E gosimple -E ineffassign  -E staticcheck -E structcheck -E unused -E varcheck -E bodyclose -E funlen  -E gocritic -E gosec -E maligned -E misspell -E prealloc  -E scopelint -E nakedret -E unconvert
